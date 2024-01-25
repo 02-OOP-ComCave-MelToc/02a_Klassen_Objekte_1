@@ -5,35 +5,22 @@ public class App {
     public static void main(String[] args) {
 
         // Objekt erzeugen
-        Cat cat = new Cat(); 
-        output("Adresse des Objekts: " + cat);
-
-        // Wertzuweisung
-        cat.name = "Alonzo";
-        cat.furColor = "grey";
-        cat.age = 35;
+        Cat cat = new Cat("Alonzo", "grey", 35); 
 
         // Ausgabe
-        output(cat.tellYourName());
-        output(cat.tellYourFurColor());
-        output(String.valueOf(cat.tellYourAge()));  // int --> String
+        output(cat.getName());
+        output(cat.getFurColor());
+        output(String.valueOf(cat.getAge()));  // int --> String
+
 
         output("---------------");
+        Cat cat2 = new Cat("Grizabella", "white", 29);
 
-        Cat cat2 = new Cat();
-        output("Adresse des Objekts: " + cat2);
-      
-        // Wertzuweisung
-        cat2.name = "Grizabella";
-        cat2.furColor = "white";
-        cat2.age = 29;
 
         // Ausgabe
-        output(cat2.tellYourName());
-        output(cat2.tellYourFurColor());
-        output(Integer.toString(cat2.tellYourAge()));  // int --> String
-        
-
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));  // int --> String
 
     }
 
@@ -42,8 +29,6 @@ public class App {
         System.out.println(outputStr);
     }
       
-
-
 
 }
 
