@@ -28,7 +28,6 @@ public class Cat {
         return furColor;
     }
 
-
     public int getAge() {
         return age;
     }
